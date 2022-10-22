@@ -7,9 +7,9 @@ let students = class1.concat(class2)
 let allStudents = [...class1, ...class2]
 
 
-let list = function (allStudents){
+let list = function (students){
     let item = document.getElementById("item")
-    allStudents.forEach(function(el) {
+    students.forEach(function(el) {
         let items = `
         <li>${el}</li>
         `;
@@ -17,4 +17,4 @@ let list = function (allStudents){
     })
 }
 
-list(class2)
+list(allStudents)
